@@ -2,6 +2,15 @@
   "name": "retention-command-center",
   "version": "1.0.0",
   "private": true,
-  "scripts": { "dev": "vite --host 0.0.0.0", "build": "vite", "preview": "vite preview --host 0.0.0.0" },
-  "devDependencies": { "vite": "latest" }
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1"
+  }
 }

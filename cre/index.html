@@ -1,39 +1,716 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pulse - Retention Command Center</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css">
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Pulse — Retention Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
 </head>
+
 <body>
+
 <div class="app-shell">
-<aside><a class="brand"><span>✦</span> pulse</a><div class="workspace">WORKSPACE <strong>Atlas Retail <span>⌄</span></strong></div><nav><a class="active">▦ &nbsp; Overview</a><a>◉ &nbsp; Customer segments</a><a>↗ &nbsp; Opportunities</a><a>⌘ &nbsp; Query lab</a></nav><div class="side-bottom"><div class="ai-pill"><span></span> AI analyst online</div><p>Data refreshed<br><b>Today, 09:42 AM</b></p></div></aside>
-<main>
-<header><div><p class="eyebrow">CUSTOMER INTELLIGENCE / Q3 2026</p><h1>Retention, made visible.</h1><p class="sub">Find the customers and moments most likely to move revenue.</p></div><div class="header-actions"><button class="outline">⇩ Export brief</button><button class="primary" id="askAI">✦ Ask Pulse AI</button></div></header>
-<section class="filters"><button class="filter active">Last 90 days <span>⌄</span></button><button class="filter">All stores <span>⌄</span></button><button class="filter">All channels <span>⌄</span></button><span class="status"><b></b> Live warehouse sync</span></section>
-<section class="metrics">
-<article><p>Repeat revenue</p><h2>₹18.4M <em class="up">↗ 12.8%</em></h2><small>vs. prior 90 days</small><div class="mini-bars"><i style="height:28%"></i><i style="height:40%"></i><i style="height:38%"></i><i style="height:58%"></i><i style="height:54%"></i><i style="height:77%"></i><i style="height:91%"></i></div></article>
-<article><p>Repeat purchase rate</p><h2>31.6% <em class="up">↗ 3.2 pp</em></h2><small>Target: 34.0%</small><div class="gauge"><span></span></div></article>
-<article><p>At-risk revenue</p><h2>₹2.81M <em class="down">↘ 8.4%</em></h2><small>2,184 customers likely to lapse</small><div class="risk-line">⌁ ⌁ ⌁ ⌁ ⌁</div></article>
-<article><p>Campaign lift</p><h2>+18.9% <em class="up">↗ 4.1 pp</em></h2><small>Incremental conversion</small><div class="dots">● ● ● ● ● ● ●</div></article>
-</section>
-<section class="grid-main">
-<article class="panel revenue"><div class="panel-head"><div><p class="eyebrow">REVENUE MOMENTUM</p><h3>Repeat revenue is compounding</h3></div><button class="ghost">Revenue ⌄</button></div><div class="legend"><span><i class="violet"></i> Repeat revenue</span><span><i class="muted"></i> Prior period</span></div><div class="chart"><div class="axis"><span>₹6M</span><span>₹4M</span><span>₹2M</span><span>₹0</span></div><svg viewBox="0 0 700 240" preserveAspectRatio="none"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#7866f6" stop-opacity=".42"/><stop offset="1" stop-color="#7866f6" stop-opacity="0"/></linearGradient></defs><path class="gridline" d="M0 15H700M0 88H700M0 161H700M0 234H700"/><path class="prior" d="M0 200 C50 186 70 206 112 175 S180 186 220 148 S289 169 330 128 S390 151 432 105 S512 127 553 76 S642 91 700 38"/><path class="area" d="M0 234V177 C50 166 70 190 112 145 S180 165 220 118 S289 141 330 85 S390 111 432 58 S512 91 553 40 S642 61 700 8V234Z"/><path class="line" d="M0 177 C50 166 70 190 112 145 S180 165 220 118 S289 141 330 85 S390 111 432 58 S512 91 553 40 S642 61 700 8"/></svg></div><div class="x-axis"><span>Jul 01</span><span>Jul 15</span><span>Aug 01</span><span>Aug 15</span><span>Sep 01</span><span>Sep 15</span></div></div></article>
-<article class="panel insight"><div class="panel-head"><p class="eyebrow">PULSE AI INSIGHT</p><span class="live-dot">LIVE</span></div><div class="insight-icon">✦</div><h3>Win back 428 high-value diners before they lapse.</h3><p>They bought 3× in the last quarter, but their usual visit window closes in 6 days.</p><div class="impact"><span>Estimated impact</span><strong>₹486K</strong><small>in recoverable revenue</small></div><button class="primary wide" id="viewPlaybook">View recommended playbook <span>→</span></button></article>
-</section>
-<section class="lower-grid">
-<article class="panel segments"><div class="panel-head"><div><p class="eyebrow">AUDIENCE HEALTH</p><h3>Where to focus next</h3></div><button class="text-button">View all segments →</button></div><div class="segment-row"><span class="avatar violet-bg">H</span><div><b>High value, cooling</b><small>428 customers · ₹486K opportunity</small></div><strong>High <i></i></strong></div><div class="segment-row"><span class="avatar orange-bg">N</span><div><b>New customers, no second order</b><small>1,756 customers · ₹1.14M opportunity</small></div><strong>Medium <i class="orange"></i></strong></div><div class="segment-row"><span class="avatar green-bg">L</span><div><b>Loyal regulars</b><small>3,209 customers · Prime advocates</small></div><strong>Low <i class="green"></i></strong></div></article>
-<article class="panel query"><div class="panel-head"><div><p class="eyebrow">QUERY LAB</p><h3>From signal to action</h3></div><span class="run-time">⚡ 0.84 sec</span></div><pre><code><span>WITH</span> customer_signal AS (
-  <span>SELECT</span> customer_id, MAX(order_date) last_order,
-         SUM(net_revenue) AS ltv
-  <span>FROM</span> fact_orders
-  <span>WHERE</span> order_date &gt;= DATEADD(day, -90, CURRENT_DATE)
-  <span>GROUP BY</span> 1
-)
-<span>SELECT</span> * <span>FROM</span> customer_signal
-<span>WHERE</span> ltv &gt; 5000 AND last_order &lt; DATEADD(day, -21, CURRENT_DATE);</code></pre><div class="query-foot"><span>Partition-pruned · Customer index used</span><button id="explainBtn">View optimization notes →</button></div></article>
-</section></main></div>
-<dialog id="modal"><button class="close" id="closeModal">×</button><p class="eyebrow">PULSE AI / RECOMMENDATION</p><h2>“We miss your usual.”</h2><p>Send a personalised WhatsApp reminder to high-value diners on day 22 after their latest order. Hold out 10% to measure incremental lift.</p><div class="modal-grid"><div><small>Audience</small><b>428 diners</b></div><div><small>Expected recovery</small><b>₹486K</b></div><div><small>Confidence</small><b>86%</b></div></div><button class="primary wide">Create campaign draft →</button></dialog>
-<script type="module" src="/src/main.js"></script></body></html>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">✦</div>
+            <span>pulse</span>
+        </div>
+
+        <div class="workspace-label">
+            WORKSPACE
+        </div>
+
+        <button class="workspace-selector">
+            Atlas Retail
+            <span>⌄</span>
+        </button>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="nav-item active">
+                <span>▦</span>
+                Overview
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◉</span>
+                Customer segments
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>↗</span>
+                Opportunities
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⌘</span>
+                Query lab
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="ai-status">
+                <span class="status-dot"></span>
+                AI analyst online
+            </div>
+
+            <div class="refresh-text">
+                Data refreshed
+                <strong>Today, 09:42 AM</strong>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <div class="eyebrow">
+                    CUSTOMER INTELLIGENCE
+                    <span>/</span>
+                    Q3 2026
+                </div>
+
+                <h1>
+                    Retention, made visible.
+                </h1>
+
+                <p class="subtitle">
+                    Find the customers and moments most likely to move revenue.
+                </p>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button class="secondary-button" id="exportBtn">
+                    ↓ Export brief
+                </button>
+
+                <button class="primary-button" id="askAt">
+                    ✦ Ask Pulse AI
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- LIVE STATUS -->
+
+        <div class="live-status">
+            <span class="status-dot"></span>
+            Live warehouse sync
+        </div>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <section class="filters">
+
+            <!-- DATE -->
+
+            <div class="filter-group">
+
+                <div class="filter-label">
+                    DATE RANGE
+                </div>
+
+                <button
+                    class="filter active"
+                    data-filter-label="date"
+                >
+                    <span data-filter-label="date">
+                        Last 90 days
+                    </span>
+                    <span>⌄</span>
+                </button>
+
+                <div class="filter-menu">
+
+                    <button
+                        data-date-range="30"
+                        class="filter-option"
+                    >
+                        Last 30 days
+                    </button>
+
+                    <button
+                        data-date-range="60"
+                        class="filter-option"
+                    >
+                        Last 60 days
+                    </button>
+
+                    <button
+                        data-date-range="90"
+                        class="filter-option active"
+                    >
+                        Last 90 days
+                    </button>
+
+                    <button
+                        data-date-range="year"
+                        class="filter-option"
+                    >
+                        This year
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- STORE -->
+
+            <div class="filter-group">
+
+                <div class="filter-label">
+                    STORE
+                </div>
+
+                <button
+                    class="filter"
+                    data-filter-label="store"
+                >
+                    <span data-filter-label="store">
+                        All stores
+                    </span>
+                    <span>⌄</span>
+                </button>
+
+                <div class="filter-menu">
+
+                    <button
+                        data-store="All stores"
+                        class="filter-option active"
+                    >
+                        All stores
+                    </button>
+
+                    <button
+                        data-store="North"
+                        class="filter-option"
+                    >
+                        North
+                    </button>
+
+                    <button
+                        data-store="South"
+                        class="filter-option"
+                    >
+                        South
+                    </button>
+
+                    <button
+                        data-store="East"
+                        class="filter-option"
+                    >
+                        East
+                    </button>
+
+                    <button
+                        data-store="West"
+                        class="filter-option"
+                    >
+                        West
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHANNEL -->
+
+            <div class="filter-group">
+
+                <div class="filter-label">
+                    CHANNEL
+                </div>
+
+                <button
+                    class="filter"
+                    data-filter-label="channel"
+                >
+                    <span data-filter-label="channel">
+                        All channels
+                    </span>
+                    <span>⌄</span>
+                </button>
+
+                <div class="filter-menu">
+
+                    <button
+                        data-channel="All channels"
+                        class="filter-option active"
+                    >
+                        All channels
+                    </button>
+
+                    <button
+                        data-channel="Online"
+                        class="filter-option"
+                    >
+                        Online
+                    </button>
+
+                    <button
+                        data-channel="Store"
+                        class="filter-option"
+                    >
+                        Store
+                    </button>
+
+                    <button
+                        data-channel="Mobile"
+                        class="filter-option"
+                    >
+                        Mobile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= KPI CARDS ================= -->
+
+        <section class="metrics-grid">
+
+            <!-- REVENUE -->
+
+            <article class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        Repeat revenue
+                    </span>
+
+                    <span class="metric-arrow positive">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div class="metric-value">
+                    ₹0
+                </div>
+
+                <div class="metric-change positive">
+                    +12.8%
+                    <span>vs. prior 90 days</span>
+                </div>
+
+                <div class="metric-decoration revenue-bars">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+            </article>
+
+
+            <!-- PURCHASE RATE -->
+
+            <article class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        Repeat purchase rate
+                    </span>
+
+                    <span class="metric-arrow positive">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div class="metric-value">
+                    0.0%
+                </div>
+
+                <div class="metric-change positive">
+                    +3.2 pp
+                    <span>Target: 34.0%</span>
+                </div>
+
+                <div class="gauge">
+
+                    <div class="gauge-track"></div>
+                    <div class="gauge-progress"></div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AT RISK -->
+
+            <article class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        At-risk revenue
+                    </span>
+
+                    <span class="metric-arrow negative">
+                        ↘
+                    </span>
+
+                </div>
+
+                <div class="metric-value">
+                    ₹0
+                </div>
+
+                <div class="metric-change negative">
+                    8.4%
+                    <span>2,184 customers likely to lapse</span>
+                </div>
+
+                <div class="risk-decoration">
+                    ↓ ↓ ↓ ↓ ↓ ↓ ↓
+                </div>
+
+            </article>
+
+
+            <!-- CAMPAIGN -->
+
+            <article class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        Campaign lift
+                    </span>
+
+                    <span class="metric-arrow positive">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div class="metric-value">
+                    +0.0%
+                </div>
+
+                <div class="metric-change positive">
+                    +4.1 pp
+                    <span>Incremental conversion</span>
+                </div>
+
+                <div class="campaign-dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= ANALYTICS SECTION ================= -->
+
+        <section class="analytics-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        REVENUE MOMENTUM
+                    </div>
+
+                    <h2>
+                        Revenue performance
+                    </h2>
+
+                </div>
+
+
+                <!-- METRIC SWITCHER -->
+
+                <div class="metric-switcher">
+
+                    <button
+                        class="metric-button active"
+                        data-metric="revenue"
+                    >
+                        Revenue
+                    </button>
+
+                    <button
+                        class="metric-button"
+                        data-metric="customers"
+                    >
+                        Customers
+                    </button>
+
+                    <button
+                        class="metric-button"
+                        data-metric="orders"
+                    >
+                        Orders
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHART CARD -->
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <h3 id="chartTitle">
+                            Repeat revenue is compounding
+                        </h3>
+
+                        <div class="chart-legend">
+
+                            <span>
+                                <i class="legend-dot primary"></i>
+                                <span id="legendPrimary">
+                                    Repeat revenue
+                                </span>
+                            </span>
+
+                            <span>
+                                <i class="legend-dot secondary"></i>
+                                Prior period
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="chart-select">
+                        <span id="chartMetricLabel">
+                            Revenue
+                        </span>
+                        ⌄
+                    </button>
+
+                </div>
+
+
+                <div class="chart-container">
+
+                    <canvas id="revenueChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CUSTOMER RISK ================= -->
+
+        <section class="lower-grid">
+
+            <div class="chart-card risk-card">
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            CUSTOMER RISK
+                        </div>
+
+                        <h3>
+                            Churn risk distribution
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="risk-chart-container">
+
+                    <canvas id="riskChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <div class="insight-card">
+
+                <div class="eyebrow">
+                    AI INSIGHT
+                </div>
+
+                <h3>
+                    Retention opportunity
+                </h3>
+
+                <p>
+                    Customers with repeated purchases but declining
+                    order frequency represent the strongest near-term
+                    retention opportunity.
+                </p>
+
+                <button
+                    class="secondary-button"
+                    id="viewPlaybook"
+                >
+                    View playbook →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUERY LAB ================= -->
+
+        <section class="query-card">
+
+            <div>
+
+                <div class="eyebrow">
+                    QUERY LAB
+                </div>
+
+                <h3>
+                    Explore your retention data
+                </h3>
+
+                <p>
+                    Ask questions about customers, orders, revenue,
+                    churn and campaign performance.
+                </p>
+
+            </div>
+
+            <button
+                class="primary-button"
+                id="askQuery"
+            >
+                Ask a question
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ================= MODAL ================= -->
+
+<dialog id="modal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="closeModal"
+        >
+            ×
+        </button>
+
+        <div class="eyebrow">
+            PULSE AI
+        </div>
+
+        <h2>
+            Retention intelligence
+        </h2>
+
+        <p>
+            Ask Pulse to analyze customers, revenue, orders,
+            churn risk and retention opportunities.
+        </p>
+
+        <div class="ai-question">
+
+            <input
+                type="text"
+                placeholder="e.g. Which customers are most likely to churn?"
+                id="aiInput"
+            />
+
+            <button class="primary-button">
+                Analyze
+            </button>
+
+        </div>
+
+        <div class="ai-suggestions">
+
+            <button>
+                Show high-risk customers
+            </button>
+
+            <button>
+                Explain revenue change
+            </button>
+
+            <button>
+                Find retention opportunities
+            </button>
+
+        </div>
+
+    </div>
+
+</dialog>
+
+
+<!-- ================= SCRIPT ================= -->
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
